@@ -1,0 +1,186 @@
+%-------------------------
+% Tailored LaTeX CV - Wolt Senior Software Engineer, Growth Platform - Backend
+% Author : Antor Chowdhury
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{charter} 
+\usepackage[scaled]{helvet} 
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{ragged2e}
+\usepackage[none]{hyphenat}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Ultra-tight margins to guarantee strict 1-page fit
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.55in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright 
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting - Uniform Uppercase with compact spacing
+\titleformat{\section}{
+  \vspace{-2pt}\fontfamily{phv}\selectfont\raggedright\large\bfseries\uppercase
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \small #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\resumeItemListStart}{
+  \begin{itemize}[leftmargin=0.2in, itemsep=0pt, parsep=0pt, topsep=1pt]
+}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+%-------------------------------------------
+\begin{document}
+
+\vspace*{2pt}
+
+\begin{center}
+    {\Huge \fontfamily{phv}\selectfont \textbf{Antor Chowdhury}} \\[4pt]
+    {\large \fontfamily{phv}\selectfont Senior Backend Engineer \textbar\ AI-Native Systems Architecture} \\[4pt]
+    \small
+    Helsinki, Finland \textbar\ +358 449244409 \textbar\ 
+    \href{mailto:antor_habib@yahoo.com}{\underline{antor\_habib@yahoo.com}} \textbar\ 
+    \href{https://www.linkedin.com/in/antor-habib/}{\underline{linkedin.com/in/antor-habib/}} \textbar\ 
+    \href{https://github.com/Ant-Hab}{\underline{github.com/Ant-Hab}}
+\end{center}
+
+\vspace{-2pt}
+
+\section{Professional Summary}
+\begin{justify}
+\small{
+Results-driven Software Engineer holding an \textbf{M.Sc. in Industrial Engineering and Management} alongside intensive low-level backend systems engineering training at \textbf{Hive Helsinki (École 42)}. Demonstrates extensive experience building production-grade software, distributed systems integrations, and automated pipelines. Pioneer in agentic coding workflows, leveraging AI agents as engineering force multipliers. Skilled in Python, TypeScript, Go, PostgreSQL, and Docker microservices to scale backend platform infrastructure across multi-brand enterprise ecosystems.
+}
+\end{justify}
+
+\vspace{-6pt}
+
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt, topsep=1pt]
+\small{\item{
+\textbf{Programming Languages:} \textbf{Python}, \textbf{TypeScript}, \textbf{JavaScript}, Go(lang), C, C++, SQL \\
+\textbf{Backend \& Infrastructure:} \textbf{PostgreSQL (Relational Databases)}, \textbf{Docker}, Microservices Architecture, REST APIs, AWS, Nginx \\
+\textbf{AI \& Agentic Workflows:} AI Agent Orchestration, LLM Tool Integration, Automated Task Loops, Development Tooling \\
+\textbf{Systems \& Practices:} Observability, Distributed Data Integration, CI/CD, Agile Cross-Functional Collaboration
+}}
+\end{itemize}
+
+\vspace{-6pt}
+
+\section{Software \& AI Architecture Projects}
+\resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{AI Agent Job Search \& Alert Automation System} $|$ \emph{Python, AI Agents, LLMs, Automation}}{Personal Project}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented an automated job search, filtering, and alert platform utilizing autonomous AI agents to execute end-to-end data ingestion, evaluation, and alert routing workflows.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{ft\_irc -- Internet Relay Chat Daemon} $|$ \emph{C++, Network Programming, Sockets, Concurrency}}{Hive Helsinki}
+      \resumeItemListStart
+        \resumeItem{Developed a fully RFC-compliant IRC server from scratch in C++, managing non-blocking I/O multiplexing, client authentication, network protocols, and multi-channel communication state handling.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{ft\_transcendence -- Full-Stack Microservices Platform} $|$ \emph{React, TypeScript, PostgreSQL, Docker}}{Hive Helsinki}
+      \resumeItemListStart
+        \resumeItem{Engineered a modular, containerized full-stack web application with a TypeScript backend, PostgreSQL data persistence, real-time WebSockets communication, and multi-service deployment.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Inception -- Scalable Containerized Infrastructure} $|$ \emph{Docker, Nginx, MariaDB, System Security}}{Hive Helsinki}
+      \resumeItemListStart
+        \resumeItem{Architected a resilient multi-container production stack using Docker and Nginx, prioritizing isolation, automated service orchestration, secure volume mapping, and infrastructure maintainability.}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\vspace{-4pt}
+
+\section{Professional Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+  {CSL Software Resources Ltd.}{2019 -- 2023}
+  {Systems Integration Consultant (Promoted to Team Lead 2021)}{Dhaka, Bangladesh}
+  \resumeItemListStart
+    \resumeItem{Architected scalable backend data pipelines in \textbf{Python} and \textbf{PostgreSQL} to integrate external data streams, increasing data throughput and eliminating processing bottlenecks.}
+    \resumeItem{Led cross-functional engineering initiatives, taking full end-to-end ownership of software features from initial architecture design to production release and ongoing monitoring.}
+    \resumeItem{Collaborated across product and engineering domains to translate complex business workflows into high-availability microservices and production APIs.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {Walton Group}{2017 -- 2019}
+  {Sourcing \& Logistics Manager}{Dhaka, Bangladesh}
+  \resumeItemListStart
+    \resumeItem{Managed cross-functional international logistics operations and vendor integration workflows, streamlining cross-border supply chain bottlenecks and accelerating execution cycles across departments.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\vspace{-4pt}
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Hive Helsinki $|$ \normalfont Software Engineering Programme (École 42 Network)}{2025 -- Ongoing}
+    {Project-based low-level software engineering, systems design, and peer-to-peer programming}{Helsinki, Finland}
+
+  \resumeSubheading
+    {University of Oulu $|$ \normalfont Master's in Industrial Engineering and Management}{2021}
+    {Focus on Operations Research, Systems Modeling, and Strategic Process Optimization}{Oulu, Finland}
+\resumeSubHeadingListEnd
+
+\vspace{-2pt}
+
+\section{Languages}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt, topsep=1pt]
+\small{\item{
+\textbf{English} (Fluent/Professional Working), \textbf{Finnish} (Professional), \textbf{Bengali} (Native), \textbf{Hindi/Urdu} (Fluent)
+}}
+\end{itemize}
+
+\end{document}

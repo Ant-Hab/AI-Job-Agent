@@ -1,0 +1,179 @@
+%-------------------------
+% Tailored Resume for SSH Communications Security - Software Engineer (PrivX)
+% Author : Antor Chowdhury
+% Font: Charter (Serif) & Helvetica (Sans-serif)
+% Strictly 1 Page
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{charter} 
+\usepackage[scaled]{helvet} 
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{ragged2e}
+\usepackage[none]{hyphenat}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Ultra-tight margins to guarantee strict 1-page fit
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.55in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright 
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting - Uniform Uppercase with compact spacing
+\titleformat{\section}{
+  \vspace{-2pt}\fontfamily{phv}\selectfont\raggedright\large\bfseries\uppercase
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \small #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textit{\small #2} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-6pt}}
+
+\newcommand{\resumeItemListStart}{
+  \begin{itemize}[leftmargin=0.2in, itemsep=0pt, parsep=0pt, topsep=1pt]
+}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+%-------------------------------------------
+\begin{document}
+
+\vspace*{2pt}
+
+\begin{center}
+    {\Huge \fontfamily{phv}\selectfont \textbf{Antor Chowdhury}} \\[4pt]
+    {\large \fontfamily{phv}\selectfont Software Engineer \textbar\ Systems, Backend \& Go} \\[4pt]
+    \small
+    Helsinki, Finland \textbar\ +358 449244409 \textbar\ 
+    \href{mailto:antor_habib@yahoo.com}{\underline{antor\_habib@yahoo.com}} \textbar\ 
+    \href{https://www.linkedin.com/in/antor-habib/}{\underline{linkedin.com/in/antor-habib/}} \textbar\ 
+    \href{https://github.com/Ant-Hab}{\underline{github.com/Ant-Hab}}
+\end{center}
+
+\vspace{-2pt}
+
+\section{Professional Summary}
+\begin{justify}
+\small{
+Motivated Software Engineer combining deep hands-on systems programming from \textbf{Hive Helsinki (École 42 Network)} with an \textbf{M.Sc. in Industrial Engineering and Management}. Possesses four years of professional experience building scalable software integrations, maintaining CI/CD automated test workflows, and working across multidisciplinary teams. Skilled in **Go (Golang)**, **C/C++**, **Docker**, **Linux environments**, and **secure coding practices**. Passionate about contributing to robust Privileged Access Management (PAM) architectures and global cybersecurity solutions at SSH Communications Security.
+}
+\end{justify}
+
+\vspace{-6pt}
+
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt, topsep=1pt]
+\small{\item{
+\textbf{Programming Languages:} \textbf{Go (Golang)}, **C**, **C++**, **Python**, TypeScript/JavaScript, SQL \\
+\textbf{Infrastructure \& DevOps:} \textbf{Docker}, \textbf{Linux}, \textbf{CI/CD Pipelines}, Nginx, Automated Testing, Git \\
+\textbf{Backend \& Security:} \textbf{Secure Coding Practices}, REST APIs, Relational Databases (\textbf{PostgreSQL}), Microservices \\
+\textbf{Methodologies:} Agile/Scrum, Code Review, Technical Writing \& Documentation, Root-Cause Analysis
+}}
+\end{itemize}
+
+\vspace{-6pt}
+
+\section{Software \& Systems Architecture Projects}
+\resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Inception -- Containerized Secure Infrastructure} $|$ \emph{Docker, Linux, Nginx, Relational Databases}}{Hive Helsinki}
+      \resumeItemListStart
+        \resumeItem{Architected a secure, multi-service virtualized environment using \textbf{Docker} and \textbf{Linux}, configuring isolated containers, TLS protocols, and maintainable deployment standards.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{ft\_irc -- Network Protocol \& Server Architecture} $|$ \emph{C++, Network Sockets, Security, Git}}{Hive Helsinki}
+      \resumeItemListStart
+        \resumeItem{Developed an IRC server from scratch adhering to official RFC specifications, implementing concurrent client handling, socket manipulation, authentication mechanisms, and strict memory safety.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{ft\_transcendence -- Secure Web Application} $|$ \emph{TypeScript, PostgreSQL, Docker, REST APIs}}{Hive Helsinki}
+      \resumeItemListStart
+        \resumeItem{Engineered a secure microservices web platform featuring robust API endpoints, JWT/OAuth authentication flow, dynamic database management with \textbf{PostgreSQL}, and containerized deployment.}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\vspace{-4pt}
+
+\section{Professional Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+  {CSL Software Resources Ltd.}{2019 -- 2023}
+  {Systems Integration Consultant (Promoted to Team Lead 2021)}{Dhaka, Bangladesh}
+  \resumeItemListStart
+    \resumeItem{Collaborated closely with cross-functional product managers, QA specialists, and engineers to translate complex system requirements into reliable, secure software solutions.}
+    \resumeItem{Built and maintained efficient data integration pipelines and backend APIs in \textbf{Python} and relational databases, establishing strict error handling and system monitoring routines.}
+    \resumeItem{Implemented continuous automated test suites and automated deployment checks within \textbf{CI/CD} workflows, improving build reliability and software release quality.}
+    \resumeItem{Led peer code reviews, established coding standards, and documented architectural changes to maintain robust software hygiene and share technical domain knowledge.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\vspace{-4pt}
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Hive Helsinki $|$ \normalfont Software Engineering Programme (École 42 Network)}{2025 -- Ongoing}
+    {Project-driven systems engineering, low-level architecture, and secure software design}{Helsinki, Finland}
+    \resumeItemListStart
+        \resumeItem{Mastered core software engineering principles, memory management, and network protocols through rigorous peer-reviewed coding challenges in C, C++, and Go.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {University of Oulu $|$ \normalfont Master's in Industrial Engineering and Management}{2021}
+    {Focus on Systems Optimization, Process Engineering, and Complex Technical Workflows}{Oulu, Finland}
+\resumeSubHeadingListEnd
+
+\vspace{-2pt}
+
+\section{Languages}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt, topsep=1pt]
+\small{\item{
+\textbf{English} (Fluent/Professional Working), \textbf{Finnish} (Professional), \textbf{Bengali} (Native), \textbf{Hindi/Urdu} (Fluent)
+}}
+\end{itemize}
+
+\end{document}

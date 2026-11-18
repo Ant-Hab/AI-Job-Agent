@@ -1,0 +1,177 @@
+%-------------------------
+% Resume in Latex - Strict One Page Limit
+% Author : Antor Chowdhury
+% Font: Charter (Serif) & Helvetica (Sans-serif)
+% Optimized for: Buyer / Strategic Procurement (Ref: 47279)
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{charter} 
+\usepackage[scaled]{helvet} 
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{ragged2e}
+\usepackage[none]{hyphenat}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Ultra-tight margins to guarantee strict 1-page fit & increased footer space
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.45in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright 
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting - Uniform Uppercase with compact spacing
+\titleformat{\section}{
+  \vspace{-2pt}\fontfamily{phv}\selectfont\raggedright\large\bfseries\uppercase
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \small #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\resumeItemListStart}{
+  \begin{itemize}[leftmargin=0.2in, itemsep=0pt, parsep=0pt, topsep=1pt]
+}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+%-------------------------------------------
+\begin{document}
+
+\vspace*{2pt}
+
+\begin{center}
+    {\Huge \fontfamily{phv}\selectfont \textbf{Antor Chowdhury}} \\[4pt]
+    {\large \fontfamily{phv}\selectfont Supply Chain Manager \textbar\ Strategic Purchasing \& Negotiations} \\[4pt]
+    \small
+    Helsinki, Finland \textbar\ +358 449244409 \textbar\ 
+    \href{mailto:antor_habib@yahoo.com}{\underline{antor\_habib@yahoo.com}} \textbar\ 
+    \href{https://www.linkedin.com/in/antor-habib/}{\underline{linkedin.com/in/antor-habib/}} \textbar\ 
+    \href{https://github.com/Ant-Hab}{\underline{github.com/Ant-Hab}}
+\end{center}
+
+\vspace{-4pt}
+
+\section{Professional Summary}
+\begin{justify}
+\small{
+Strategic \textbf{Supply Chain Manager} holding an M.Sc. in Industrial Engineering with a strong focus on procurement strategies, price negotiations, and supplier relationship management. Proven track record in analyzing procurement markets, identifying cost optimization potential, and concluding framework agreements. Highly analytical and entrepreneurial, combining commercial expertise with software engineering training at Hive Helsinki to streamline enterprise purchasing processes and ERP workflows.
+}
+\end{justify}
+
+\vspace{-6pt}
+
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt, topsep=1pt]
+\small{\item{
+\textbf{Purchasing \& Strategy:} Strategic Sourcing, Price \& Contract Negotiations, Framework Agreements, Cost Optimization \\
+\textbf{Systems \& Analysis:} ERP Workflows, SAP Concepts, \textbf{Python}, \textbf{SQL}, Market Analysis, MS Office (Excel) \\
+\textbf{Supplier Management:} Supplier Relationship Building, Performance Tracking, Quality \& Delivery Assurance \\
+\textbf{Core Strengths:} \textbf{Analytical Thinking}, Structured Working Method, Entrepreneurial Mindset, Negotiation Skills
+}}
+\end{itemize}
+
+\vspace{-6pt}
+
+\section{Professional Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+  {Walton Group}{2017 -- 2019}
+  {Supply Chain Manager}{Dhaka, Bangladesh}
+  \resumeItemListStart
+    \resumeItem{Developed and executed procurement strategies for international product groups, managing end-to-end supplier networks and performance frameworks.}
+    \resumeItem{Conducted high-stakes price and contract negotiations, successfully establishing long-term supplier partnerships and concluding framework agreements.}
+    \resumeItem{Analyzed procurement markets to identify cost-saving potentials, optimize purchasing processes, and mitigate operational supply risks.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {CSL Software Resources Ltd.}{2021 -- 2023}
+  {Systems Integration Consultant (Promoted to Team Lead 2022)}{Dhaka, Bangladesh}
+  \resumeItemListStart
+    \resumeItem{Optimized enterprise ERP and purchasing data systems, utilizing Python and SQL to automate commercial data extraction and market analyses.}
+    \resumeItem{Collaborated with cross-functional internal interfaces to streamline ordering workflows and enhance vendor integration frameworks.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\vspace{-4pt}
+
+\section{Projects}
+\resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{M.Sc. Thesis: Supply Chain Resilience \& Strategic Risk Modeling} $\vert{}$ \emph{Data Modeling}}{University of Oulu}
+      \resumeItemListStart
+        \resumeItem{Researched quantitative market risk mitigation models, supplier reliability frameworks, and continuity strategies for industrial purchasing.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{AI-Driven Automated Workflow System} $\vert{}$ \emph{Python, Automation}}{Helsinki, Finland}
+      \resumeItemListStart
+        \resumeItem{Developed automated data pipelines to filter and analyze commercial market intelligence, significantly reducing administrative overhead.}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\vspace{-4pt}
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {University of Oulu $\vert{}$ \normalfont M.Sc. Industrial Engineering \& Management}{2019 -- 2021}
+    {Focus on Supply Chain Management, Operations Research, and Strategic Procurement}{Oulu, Finland}
+
+  \resumeSubheading
+    {Hive Helsinki $\vert{}$ \normalfont Software Engineering Programme (Ecole 42 Network)}{2025 -- Ongoing}
+    {Rigorous, project-driven software development and systems engineering curriculum}{Helsinki, Finland}
+\resumeSubHeadingListEnd
+
+\vspace{-4pt}
+
+\section{Languages}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt, topsep=1pt]
+\small{\item{
+\textbf{English} (Fluent), \textbf{German} (Basic -- actively expanding), \textbf{Finnish} (Professional), \textbf{Bengali} (Native), \textbf{Hindi/Urdu} (Fluent)
+}}
+\end{itemize}
+
+\end{document}

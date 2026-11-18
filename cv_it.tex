@@ -1,0 +1,178 @@
+%-------------------------
+% Resume in Latex - Strict One Page Limit
+% Author : Antor Chowdhury
+% Font: Charter (Serif) & Helvetica (Sans-serif)
+% Optimized for: Kapacity.io / EnergyHub | Software Engineer I
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{charter} 
+\usepackage[scaled]{helvet} 
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{ragged2e}
+\usepackage[none]{hyphenat}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Ultra-tight margins to guarantee strict 1-page fit
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.55in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright 
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting - Uniform Uppercase with compact spacing
+\titleformat{\section}{
+  \vspace{-1pt}\fontfamily{phv}\selectfont\raggedright\large\bfseries\uppercase
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \small #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textit{\small #2} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-6pt}}
+
+\newcommand{\resumeItemListStart}{
+  \begin{itemize}[leftmargin=0.2in, itemsep=0pt, parsep=0pt, topsep=1pt]
+}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+%-------------------------------------------
+\begin{document}
+
+\vspace*{2pt}
+
+\begin{center}
+    {\Huge \fontfamily{phv}\selectfont \textbf{Antor Chowdhury}} \\[4pt]
+    {\large \fontfamily{phv}\selectfont Software Engineer \textbar\ Full-Stack \& Systems Architecture} \\[4pt]
+    \small
+    Helsinki, Finland \textbar\ +358 449244409 \textbar\ 
+    \href{mailto:antor_habib@yahoo.com}{\underline{antor\_habib@yahoo.com}} \textbar\ 
+    \href{https://www.linkedin.com/in/antor-habib/}{\underline{linkedin.com/in/antor-habib/}} \textbar\ 
+    \href{https://github.com/Ant-Hab}{\underline{github.com/Ant-Hab}}
+\end{center}
+
+\vspace{0pt}
+
+\section{Professional Summary}
+\begin{justify}
+\small{
+Growth-minded Software Engineer holding an \textbf{M.Sc. in Industrial Engineering and Management} alongside rigorous systems programming training at \textbf{Hive Helsinki}. Backed by \textbf{four years of experience deploying production-quality software} and translating business needs into scalable technical solutions. Highly skilled in Python, TypeScript, React, PostgreSQL, and Docker containerization. Passionate about applying software architecture and process optimization to power markets, Virtual Power Plants, and grid flexibility solutions.
+}
+\end{justify}
+
+\vspace{-6pt}
+
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt, topsep=1pt]
+\small{\item{
+\textbf{Programming Languages:} \textbf{Python}, \textbf{TypeScript}, \textbf{JavaScript}, Go(lang) (Familiar), C, C++ \\
+\textbf{Front-End \& UI/UX:} \textbf{React}, UI/UX Development, Responsive Design, Single-Page Applications \\
+\textbf{Back-End \& Infrastructure:} \textbf{PostgreSQL (Relational Databases)}, \textbf{Docker}, \textbf{AWS} (Basics), Django, REST APIs \\
+\textbf{Domain Expertise:} Energy/Power Systems Modeling, Process Optimization, HVAC Data Integrations
+}}
+\end{itemize}
+
+\vspace{-6pt}
+
+\section{Software \& Architecture Projects}
+\resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{ft\_transcendence -- Full-Stack Web App} $|$ \emph{React, TypeScript, PostgreSQL, UI/UX}}{Hive Helsinki}
+      \resumeItemListStart
+        \resumeItem{Engineered a responsive single-page web application integrating a \textbf{React/TypeScript} frontend with a robust \textbf{PostgreSQL database}, demonstrating strong UI/UX principles and end-to-end deployment.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Inception -- Containerized Infrastructure} $|$ \emph{Docker, Nginx, Relational Databases}}{Hive Helsinki}
+      \resumeItemListStart
+        \resumeItem{Architected a scalable, multi-service environment from scratch using \textbf{Docker}, securely configuring web servers and databases to ensure maintainable, production-ready infrastructure.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Energy \& Systems Optimization Modeling} $|$ \emph{Industrial Engineering Systems}}{University of Oulu}
+      \resumeItemListStart
+        \resumeItem{Applied operational research frameworks to evaluate \textbf{complex technical workflows} and resource distribution, establishing a deep foundational understanding applicable to grid flexibility and Virtual Power Plants.}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\vspace{-4pt}
+
+\section{Professional Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+  {CSL Software Resources Ltd.}{2019 -- 2023}
+  {Systems Integration Consultant (Promoted to Team Lead 2021)}{Dhaka, Bangladesh}
+  \resumeItemListStart
+    \resumeItem{Worked directly with cross-functional stakeholders to translate complex business needs into viable, production-quality technical solutions and software integrations.}
+    \resumeItem{Developed and maintained scalable data pipelines utilizing \textbf{Python} and relational databases to process external data streams, significantly reducing manual overhead and system latency.}
+    \resumeItem{Contributed actively to the core codebase while participating in agile work planning, retrospectives, and continuous team improvement initiatives.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\vspace{-4pt}
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Hive Helsinki $|$ \normalfont Software Engineering Programme (Ecole 42 Network)}{2025 -- Ongoing}
+    {Rigorous, project-driven software development and systems engineering curriculum}{Helsinki, Finland}
+    \resumeItemListStart
+        \resumeItem{Mastered core programming principles, scalable architecture, and adaptability by solving ambiguous technical challenges in a peer-to-peer, project-based environment.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {University of Oulu $|$ \normalfont Master's in Industrial Engineering and Management}{2021}
+    {Focus on Business Operations, Systems Modeling, and Strategic Process Optimization}{Oulu, Finland}
+\resumeSubHeadingListEnd
+
+\vspace{-2pt}
+
+\section{Languages}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt, topsep=1pt]
+\small{\item{
+\textbf{English} (Fluent/Professional Working), \textbf{Finnish} (Professional), \textbf{Bengali} (Native), \textbf{Hindi/Urdu} (Fluent)
+}}
+\end{itemize}
+
+\end{document}

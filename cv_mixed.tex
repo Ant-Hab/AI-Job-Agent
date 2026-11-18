@@ -1,0 +1,182 @@
+%-------------------------
+% Resume in Latex - Strict One Page Limit
+% Author : Antor Chowdhury
+% Font: Charter (Serif) & Helvetica (Sans-serif)
+% Optimized for: General IT, Systems Integration & Supply Chain
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{charter} 
+\usepackage[scaled]{helvet} 
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{ragged2e}
+\usepackage[none]{hyphenat}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Ultra-tight margins to guarantee strict 1-page fit
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.35in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright 
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting - Uniform Uppercase with compact spacing
+\titleformat{\section}{
+  \vspace{-1pt}\fontfamily{phv}\selectfont\raggedright\large\bfseries\uppercase
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \small #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textit{\small #2} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-6pt}}
+
+\newcommand{\resumeItemListStart}{
+  \begin{itemize}[leftmargin=0.2in, itemsep=0pt, parsep=0pt, topsep=1pt]
+}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+%-------------------------------------------
+\begin{document}
+
+\vspace*{2pt}
+
+\begin{center}
+    {\Huge \fontfamily{phv}\selectfont \textbf{Antor Chowdhury}} \\[4pt]
+    {\large \fontfamily{phv}\selectfont Industrial Engineer \textbar\ IT Specialist \textbar\ Supply Chain Professional} \\[4pt]
+    \small
+    Helsinki, Finland \textbar\ +358 449244409 \textbar\ 
+    \href{mailto:antor_habib@yahoo.com}{\underline{antor\_habib@yahoo.com}} \textbar\ 
+    \href{https://www.linkedin.com/in/antor-habib/}{\underline{linkedin.com/in/antor-habib/}} \textbar\ 
+    \href{https://github.com/Ant-Hab}{\underline{github.com/Ant-Hab}}
+\end{center}
+
+\vspace{0pt}
+
+\section{Professional Summary}
+\begin{justify}
+\small{
+Versatile \textbf{Industrial Engineer} (M.Sc.) with rigorous software engineering training at \textbf{Hive Helsinki}, offering a unique blend of IT infrastructure, systems integration, and supply chain expertise. Backed by 4 years of experience optimizing enterprise workflows, managing international logistics, and automating data processes using \textbf{Python} and \textbf{SQL}. Proactive, highly adaptable, and eager to leverage a strong technical and commercial foundation to solve complex operational challenges and drive cross-functional excellence.
+}
+\end{justify}
+
+\vspace{-6pt}
+
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt, topsep=1pt]
+\small{\item{
+\textbf{IT \& Development:} \textbf{Python}, \textbf{SQL}, \textbf{Docker}, \textbf{TypeScript}, Linux, GitHub, Full-Stack Web Development \\
+\textbf{Operations \& Logistics:} ERP Workflows, Supply Chain Management, Logistics Optimization, IT Support \\
+\textbf{Methodologies:} Agile Software Development, Systems Architecture, Data Visualization, Process Automation \\
+\textbf{Core Strengths:} \textbf{Attention to Detail}, Pragmatic Problem-Solving, Cross-Functional Communication
+}}
+\end{itemize}
+
+\vspace{-6pt}
+
+\section{Professional Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+  {Walton Group}{2017 -- 2019}
+  {Supply Chain Manager}{Dhaka, Bangladesh}
+  \resumeItemListStart
+    \resumeItem{Managed end-to-end operational parameters for international supply networks, utilizing centralized tracking models to interpret vulnerabilities and mitigate delivery roadblocks.}
+    \resumeItem{Conducted comprehensive assessments of vendor reliability, executing commercial negotiations and ensuring strict compliance with internal guidelines.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {CSL Software Resources Ltd.}{2021 -- 2023}
+  {Systems Integration Consultant (Promoted to Team Lead 2022)}{Dhaka, Bangladesh}
+  \resumeItemListStart
+    \resumeItem{Authored integration scripts using Python and SQL to process enterprise data streams, actively improving and automating manual processes to ensure high operational performance.}
+    \resumeItem{Carried out quantitative data analysis to resolve complex ERP system bottlenecks, presenting technical solutions clearly to cross-functional business stakeholders.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\vspace{-4pt}
+
+\section{Technical \& Academic Projects}
+\resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{ft\_transcendence -- Full-Stack Web Application} $\vert{}$ \emph{TypeScript, SQL, Docker}}{Hive Helsinki}
+      \resumeItemListStart
+        \resumeItem{Engineered a real-time, comprehensive web application demonstrating hands-on expertise in \textbf{full-stack development}, reliable agile software practices, and complex system architecture.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Inception -- IT Infrastructure Environment} $\vert{}$ \emph{Docker, Linux, System Administration}}{Hive Helsinki}
+      \resumeItemListStart
+        \resumeItem{Designed and built a complete, secure multi-service IT environment from scratch. Configured web servers, internal networks, and databases using secure containerization.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{M.Sc. Thesis: Resilience \& Risk Management Strategies} $\vert{}$ \emph{Data Modeling}}{University of Oulu}
+      \resumeItemListStart
+        \resumeItem{Analyzed complex supply chain vulnerabilities and developed robust mitigation frameworks, applying quantitative data modeling directly translatable to diverse operational environments.}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\vspace{-4pt}
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {University of Oulu $\vert{}$ \normalfont M.Sc. Industrial Engineering \& Management}{2019 -- 2021}
+    {Focus on Business Operations, Systems Modeling, and Strategic Process Optimization}{Oulu, Finland}
+    
+  \resumeSubheading
+    {Hive Helsinki $\vert{}$ \normalfont Software Engineering Programme (Ecole 42 Network)}{2025 -- Ongoing}
+    {Rigorous, project-driven software development and systems engineering curriculum}{Helsinki, Finland}
+\resumeSubHeadingListEnd
+
+\vspace{-4pt}
+
+\section{Languages}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt, topsep=1pt]
+\small{\item{
+\textbf{English} (Fluent), \textbf{Finnish} (Professional), \textbf{German} (Basic), \textbf{Bengali} (Native), \textbf{Hindi/Urdu} (Fluent)
+}}
+\end{itemize}
+
+\end{document}

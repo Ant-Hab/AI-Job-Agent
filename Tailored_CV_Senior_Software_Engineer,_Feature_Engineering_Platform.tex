@@ -1,0 +1,184 @@
+%-------------------------
+% Resume in Latex - Tailored for Wolt (Senior Software Engineer, Feature Engineering Platform)
+% Author : Antor Chowdhury
+% Font: Charter (Serif) & Helvetica (Sans-serif)
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{charter} 
+\usepackage[scaled]{helvet} 
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{ragged2e}
+\usepackage[none]{hyphenat}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Tight margins to guarantee strict 1-page fit
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.75in}
+\addtolength{\textheight}{1.55in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright 
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-2pt}\fontfamily{phv}\selectfont\raggedright\large\bfseries\uppercase
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \small #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textit{\small #2} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-6pt}}
+
+\newcommand{\resumeItemListStart}{
+  \begin{itemize}[leftmargin=0.2in, itemsep=0pt, parsep=0pt, topsep=1pt]
+}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+%-------------------------------------------
+\begin{document}
+
+\vspace*{2pt}
+
+\begin{center}
+    {\Huge \fontfamily{phv}\selectfont \textbf{Antor Chowdhury}} \\[4pt]
+    {\large \fontfamily{phv}\selectfont Software Engineer \textbar\ Platform Engineering \& Backend Architecture} \\[4pt]
+    \small
+    Helsinki, Finland \textbar\ +358 449244409 \textbar\ 
+    \href{mailto:antor_habib@yahoo.com}{\underline{antor\_habib@yahoo.com}} \textbar\ 
+    \href{https://www.linkedin.com/in/antor-habib/}{\underline{linkedin.com/in/antor-habib/}} \textbar\ 
+    \href{https://github.com/Ant-Hab}{\underline{github.com/Ant-Hab}}
+\end{center}
+
+\vspace{-2pt}
+
+\section{Professional Summary}
+\begin{justify}
+\small{
+Growth-minded Software Engineer holding an \textbf{M.Sc. in Industrial Engineering and Management} alongside rigorous systems programming training at \textbf{Hive Helsinki (École 42 Network)}. Experienced in architecting robust backend APIs, designing scalable data pipelines in Python, and building clean developer abstractions. Passionate about creating developer-first tooling, streamlining ML platform infrastructure, and optimizing complex workflows at scale.
+}
+\end{justify}
+
+\vspace{-6pt}
+
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt, topsep=1pt]
+\small{\item{
+\textbf{Programming Languages:} \textbf{Python}, \textbf{TypeScript}, Go (Familiar), C, C++ \\
+\textbf{Platform \& Backend Engineering:} REST APIs, SDK Development, Relational Databases (\textbf{PostgreSQL}), Data Pipelines, Microservices Architecture \\
+\textbf{Infrastructure \& DevOps:} \textbf{Docker Containerization}, Nginx, Distributed Compute Concepts (Spark exposure), Observability \& Logging \\
+\textbf{Systems \& Domain Expertise:} API Abstraction Design, Data Ingestion Workflows, Process Optimization, Developer Experience (DX)
+}}
+\end{itemize}
+
+\vspace{-6pt}
+
+\section{Software \& Architecture Projects}
+\resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Automated Job Search \& Alert System} $|$ \emph{AI Agents, Python, REST APIs, Automation}}{Personal Project}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented an automated job search, filtering, and alert pipeline utilizing \textbf{AI agents} and Python to parse, categorize, and stream structured data efficiently.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{ft\_transcendence -- Platform Web Application} $|$ \emph{TypeScript, React, PostgreSQL, REST APIs}}{Hive Helsinki}
+      \resumeItemListStart
+        \resumeItem{Architected real-time platform backend services, database schema designs, and client SDK abstractions to deliver a scalable, single-page full-stack user experience.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Inception -- Containerized Platform Infrastructure} $|$ \emph{Docker, Infrastructure Automation}}{Hive Helsinki}
+      \resumeItemListStart
+        \resumeItem{Engineered a multi-container platform stack using \textbf{Docker}, enforcing strict security protocols, service isolation, and seamless data persistence for scalable services.}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\vspace{-4pt}
+
+\section{Professional Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+  {CSL Software Resources Ltd.}{2019 -- 2023}
+  {Systems Integration Consultant (Promoted to Team Lead 2021)}{Dhaka, Bangladesh}
+  \resumeItemListStart
+    \resumeItem{Engineered and maintained backend APIs and automated data pipelines using \textbf{Python} and relational databases, establishing seamless integrations across disparate internal data systems.}
+    \resumeItem{Designed clean system abstractions that simplified complex integration workflows for internal teams, significantly reducing integration friction and system overhead.}
+    \resumeItem{Collaborated with cross-functional technical teams to drive platform reliability, code quality, testing practices, and ongoing continuous deployment efforts.}
+  \resumeItemListEnd
+
+\resumeSubheading
+  {Walton Group}{2017 -- 2019}
+  {Sourcing \& Logistics Manager}{Dhaka, Bangladesh}
+  \resumeItemListStart
+    \resumeItem{Led cross-functional supply chain operations and logistics workflows, aligning operational targets across multi-department stakeholders to ensure timely distribution and execution.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\vspace{-4pt}
+
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Hive Helsinki $|$ \normalfont Software Engineering Programme (École 42 Network)}{2025 -- Ongoing}
+    {Rigorous, project-driven computer science and systems programming curriculum}{Helsinki, Finland}
+    \resumeItemListStart
+        \resumeItem{Mastered low-level systems execution, custom memory management, and scalable developer architecture through rigorous peer-reviewed project delivery.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {University of Oulu $|$ \normalfont Master's in Industrial Engineering and Management}{2021}
+    {Focus on Business Operations, Systems Modeling, and Process Optimization}{Oulu, Finland}
+\resumeSubHeadingListEnd
+
+\vspace{-2pt}
+
+\section{Languages}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt, topsep=1pt]
+\small{\item{
+\textbf{English} (Fluent/Professional), \textbf{Finnish} (Professional), \textbf{Bengali} (Native), \textbf{Hindi/Urdu} (Fluent)
+}}
+\end{itemize}
+
+\end{document}
