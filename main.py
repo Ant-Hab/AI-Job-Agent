@@ -25,19 +25,19 @@ def process_jobs():
                 if score >= 75:
                     color = "🟩"
                 elif score >= 51:
-                    color = "🍏"
+                    color = "🟦"
                 else:
                     color = "🟨"
                     
                 print("🔥 Match found! Generating documents...")
-                cv_tex, cl_tex = generate_application_docs(title, desc, category)
+                cv_tex, cl_tex, is_success = generate_application_docs(title, desc, category)
                 
-                if cl_tex is not None:
-                    file_status = f"✅ AI Tailored Success!\nLaTeX: `{cv_tex}`, `{cl_tex}`\n(Compile to PDF in Overleaf or terminal)"
-                elif cv_tex is not None:
-                    file_status = f"⚠️ API Quota Exceeded.\nFallback Base CV Ready: `{cv_tex}`"
+                if is_success:
+                    file_status = "✅ AI Tailored Success! `.tex` files attached below 👇"
+                elif cv_tex is not None and cl_tex is not None:
+                    file_status = "⚠️ API Quota Exceeded. Base `.tex` files attached below 👇"
                 else:
-                    file_status = "❌ API Overloaded. Links below to apply manually."
+                    file_status = "❌ System Error. Apply manually."
                 
                 message = (
                     f"{color} *Match Score: {score}/100*\n\n"
@@ -45,10 +45,14 @@ def process_jobs():
                     f"**Category:** {category}\n"
                     f"**Why:** {evaluation.get('reasoning')}\n"
                     f"**Missing:** {', '.join(evaluation.get('missing_skills', ['None']))}\n\n"
-                    f"📄 *Files:* \n{file_status}\n\n"
+                    f"📄 *Files:* {file_status}\n\n"
                     f"[Apply Here (LinkedIn)]({link})"
                 )
-                send_telegram_alert(message)
+                
+                # Bundle the generated .tex files and send to Telegram
+                files_to_send = [f for f in [cv_tex, cl_tex] if f is not None]
+                send_telegram_alert(message, files=files_to_send)
+                
             else:
                 print("Score too low. Skipping document generation and alert.")
 
